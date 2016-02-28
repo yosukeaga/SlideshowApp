@@ -94,6 +94,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-mX-MvX">
                                 <rect key="frame" x="277" y="438" width="46" height="30"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="3VL-uF-m3G" kind="unwind" unwindAction="unwind:" id="eX2-no-iXW"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gqb-nU-zly">
                                 <rect key="frame" x="160" y="190" width="280" height="220"/>
@@ -116,6 +119,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YH4-si-h3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3VL-uF-m3G" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="946" y="311"/>
         </scene>

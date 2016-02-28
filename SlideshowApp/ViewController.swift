@@ -98,6 +98,9 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+    }
+    
     //timerメソッド
     func nextpage (){
         ++No
@@ -113,12 +116,14 @@ class ViewController: UIViewController {
     
     
     func didClickImageView(recognizer: UIGestureRecognizer){
-        performSegueWithIdentifier("PushShopDetail", sender: nil)
+        performSegueWithIdentifier("PushShopDetail", sender: self)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
+        print(sender)
+        
          if(segue.identifier ==  "PushShopDetail"){
             let wideViewController2:WideViewController = segue.destinationViewController as!WideViewController
             wideViewController2.photonumber = No
