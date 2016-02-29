@@ -91,13 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-mX-MvX">
-                                <rect key="frame" x="277" y="438" width="46" height="30"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <segue destination="3VL-uF-m3G" kind="unwind" unwindAction="unwind:" id="eX2-no-iXW"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gqb-nU-zly">
                                 <rect key="frame" x="160" y="190" width="280" height="220"/>
                                 <constraints>
@@ -105,12 +98,19 @@
                                     <constraint firstAttribute="width" constant="280" id="dS6-x9-OtZ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-mX-MvX">
+                                <rect key="frame" x="277" y="470" width="46" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="3VL-uF-m3G" kind="unwind" unwindAction="unwind:" id="eX2-no-iXW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oSB-mX-MvX" firstAttribute="centerX" secondItem="LCK-4R-Ow6" secondAttribute="centerX" id="L7M-0K-PT5"/>
                             <constraint firstItem="gqb-nU-zly" firstAttribute="centerX" secondItem="LCK-4R-Ow6" secondAttribute="centerX" id="MuF-e4-d2y"/>
-                            <constraint firstItem="oSB-mX-MvX" firstAttribute="top" secondItem="gqb-nU-zly" secondAttribute="bottom" constant="28" id="bke-OT-to2"/>
+                            <constraint firstItem="0aK-K1-t90" firstAttribute="top" secondItem="oSB-mX-MvX" secondAttribute="bottom" constant="50" id="RXb-LR-FP4"/>
                             <constraint firstItem="gqb-nU-zly" firstAttribute="centerY" secondItem="LCK-4R-Ow6" secondAttribute="centerY" id="isv-2u-Czf"/>
                         </constraints>
                     </view>

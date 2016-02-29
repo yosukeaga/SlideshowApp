@@ -22,8 +22,9 @@ class WideViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         img2 = UIImage(named: "\(photonumber).jpg")
+        
+        Photo2.transform = CGAffineTransformMakeScale(1.5, 1.5)
         Photo2.image = img2
-    
     
     }
 
